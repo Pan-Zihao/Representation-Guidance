@@ -43,19 +43,35 @@ We introduce **Representation Guidance (RG)**, which directly forms and exploits
   <img src="assets/pipeline.png" width="92%" alt="Training with Representation Guidance">
 </p>
 
+## Results
+
+### ImageNet 256×256
+
 <div align="center">
 <table>
-  <tr><th>ImageNet 256×256</th><th>ImageNet 512×512</th><th>GenEval</th><th>DPG-Bench</th></tr>
-  <tr align="center"><td><b>1.55</b> FID</td><td><b>1.74</b> FID</td><td><b>0.89</b></td><td><b>87.1</b></td></tr>
+  <tr><th>Model</th><th>Params</th><th>GFLOPs</th><th>Epochs</th><th>FID&darr;</th><th>IS&uarr;</th></tr>
+  <tr align="center"><td rowspan="3">RG-B/16</td><td rowspan="3">131.5M</td><td rowspan="3">28.5</td><td>100</td><td>4.45</td><td>&ndash;</td></tr>
+  <tr align="center"><td>200</td><td>3.28</td><td>264.1</td></tr>
+  <tr align="center"><td>600</td><td>2.64</td><td>271.6</td></tr>
+  <tr align="center"><td rowspan="2">RG-L/16</td><td rowspan="2">459.4M</td><td rowspan="2">99.2</td><td>200</td><td>2.00</td><td>&ndash;</td></tr>
+  <tr align="center"><td>600</td><td>1.79</td><td>285.6</td></tr>
+  <tr align="center"><td>RG-XL/16</td><td>724.9M</td><td>155.8</td><td>600</td><td><b>1.55</b></td><td>293.8</td></tr>
 </table>
 </div>
 
-<p align="center">
-  <img src="assets/scaling_pca.png" width="92%" alt="Scaling and internal representations">
-</p>
-<p align="center"><sub><b>RG enables efficient scaling and better internal representations.</b> (a) RG scales consistently from B to XL. (b) RG learns clearer spatial structure and more localized semantic correspondence.</sub></p>
+### ImageNet 512×512 and Text-to-Image
+
+<div align="center">
+<table>
+  <tr><th>Model</th><th>Task</th><th>Metric</th></tr>
+  <tr align="center"><td>RG-XL/16</td><td>ImageNet 512×512</td><td>FID <b>1.74</b> &nbsp;/&nbsp; IS 287.5</td></tr>
+  <tr align="center"><td>RG-T2I-L/16</td><td>Text-to-image 512×512</td><td>GenEval <b>0.89</b> &nbsp;/&nbsp; DPG-Bench <b>87.1</b></td></tr>
+</table>
+</div>
 
 ## TODO
+
+We plan to release the code and model weights in the coming weeks.
 
 - [ ] Release ImageNet training and evaluation code
 - [ ] Release text-to-image training and evaluation code
@@ -78,4 +94,4 @@ If you find this work useful, please consider citing:
 
 ## Contact
 
-For questions, please contact Zihao Pan (panzh33@mail2.sysu.edu.cn).
+For questions, please contact Zihao Pan (panzihao43@gmail.com).
