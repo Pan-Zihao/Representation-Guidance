@@ -75,8 +75,6 @@ We plan to release the code and model weights in the coming weeks.
 
 - [ ] Release ImageNet training and evaluation code
 - [ ] Release text-to-image training and evaluation code
-- [ ] Release ImageNet model weights
-- [ ] Release text-to-image model weights
 
 ## Citation
 
