@@ -24,7 +24,7 @@ Wei Li<sup>2</sup>&ensp;
 
 <p>
 <a href="https://pan-zihao.github.io/Representation-Guidance/"><img src="https://img.shields.io/badge/Project-Page-16697A?style=flat-square&logo=googlechrome&logoColor=white" alt="Project Page"></a>
-<a href="#"><img src="https://img.shields.io/badge/arXiv-Coming_Soon-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://arxiv.org/abs/2610.12978"><img src="https://img.shields.io/badge/arXiv-Coming_Soon-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a>
 <a href="#citation"><img src="https://img.shields.io/badge/Cite-BibTeX-4c4c4c?style=flat-square" alt="BibTeX"></a>
 </p>
 
